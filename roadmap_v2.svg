@@ -1,0 +1,271 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1280" height="720" fill="#0D1B2A"/>
+  <rect width="1280" height="7" fill="#00C9B1"/>
+
+  <!-- Title -->
+  <text x="640" y="48" text-anchor="middle" font-size="34" font-weight="700" fill="#FFFFFF">AI-Powered DevOps Innovations — Execution Roadmap</text>
+  <text x="640" y="76" text-anchor="middle" font-size="14" fill="#00C9B1">April → July 2026  |  4 Engineers  |  Samsung R&amp;D Institute India  |  DevInfra Team</text>
+
+  <!-- ── Column headers (months) ── -->
+  <!-- April col: x=200..520 -->
+  <rect x="200" y="88" width="310" height="44" rx="6" fill="#0891B2"/>
+  <text x="355" y="106" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">APRIL</text>
+  <text x="355" y="124" text-anchor="middle" font-size="11" fill="#CDEEF8">Setup &amp; Instrumentation</text>
+
+  <!-- May col: x=520..840 -->
+  <rect x="524" y="88" width="310" height="44" rx="6" fill="#0D9488"/>
+  <text x="679" y="106" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">MAY</text>
+  <text x="679" y="124" text-anchor="middle" font-size="11" fill="#CCFDF5">Core Agent Development</text>
+
+  <!-- June col: x=844..1060 -->
+  <rect x="848" y="88" width="200" height="44" rx="6" fill="#7C3AED"/>
+  <text x="948" y="106" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">JUNE</text>
+  <text x="948" y="124" text-anchor="middle" font-size="11" fill="#DDD6FE">Integration &amp; Testing</text>
+
+  <!-- July col: x=1058..1270 -->
+  <rect x="1052" y="88" width="210" height="44" rx="6" fill="#F97316"/>
+  <text x="1157" y="106" text-anchor="middle" font-size="16" font-weight="700" fill="#FFFFFF">JULY</text>
+  <text x="1157" y="124" text-anchor="middle" font-size="11" fill="#FED7AA">Deploy &amp; Deliver</text>
+
+  <!-- ── Row label column header ── -->
+  <rect x="0" y="88" width="196" height="44" rx="0" fill="#071828"/>
+  <text x="98" y="114" text-anchor="middle" font-size="12" font-weight="700" fill="#B0C4D8">INNOVATION</text>
+
+  <!-- vertical separators -->
+  <line x1="196" y1="86" x2="196" y2="700" stroke="#1E3A4A" stroke-width="2"/>
+  <line x1="520" y1="86" x2="520" y2="700" stroke="#1E3A4A" stroke-width="1.5"/>
+  <line x1="844" y1="86" x2="844" y2="700" stroke="#1E3A4A" stroke-width="1.5"/>
+  <line x1="1048" y1="86" x2="1048" y2="700" stroke="#1E3A4A" stroke-width="1.5"/>
+
+  <!-- ═══════════════════════════════════════
+       INN-01 ROW  y=136..248
+  ═══════════════════════════════════════ -->
+  <rect x="0" y="136" width="196" height="112" fill="#0B2236"/>
+  <rect x="0" y="136" width="7" height="112" fill="#0891B2"/>
+  <text x="104" y="186" text-anchor="middle" font-size="11" font-weight="700" fill="#0891B2">INN-01</text>
+  <text x="104" y="204" text-anchor="middle" font-size="10" fill="#FFFFFF">Build Farm</text>
+  <text x="104" y="220" text-anchor="middle" font-size="10" fill="#FFFFFF">Infra AI-Agent</text>
+  <text x="104" y="238" text-anchor="middle" font-size="9" fill="#64A0B8">Eng 1 + 2</text>
+
+  <!-- April tasks -->
+  <rect x="200" y="140" width="316" height="104" fill="#0A1F30" stroke="#1E3A4A" stroke-width="1"/>
+  <rect x="208" y="148" width="6" height="16" rx="3" fill="#0891B2"/>
+  <text x="220" y="161" font-size="11" fill="#B0C4D8">Instrument all build servers with</text>
+  <text x="220" y="176" font-size="11" fill="#B0C4D8">node_exporter; collect baseline</text>
+  <rect x="208" y="183" width="6" height="16" rx="3" fill="#0891B2"/>
+  <text x="220" y="196" font-size="11" fill="#B0C4D8">Map users → allocated cores/RAM</text>
+  <rect x="208" y="208" width="6" height="16" rx="3" fill="#0891B2"/>
+  <text x="220" y="221" font-size="11" fill="#B0C4D8">Define usage thresholds (7/14 day)</text>
+  <text x="508" y="234" text-anchor="end" font-size="9" fill="#0891B2">✓ Week 4</text>
+
+  <!-- May tasks -->
+  <rect x="524" y="140" width="316" height="104" fill="#0A2028" stroke="#1E3A4A" stroke-width="1"/>
+  <rect x="532" y="148" width="6" height="16" rx="3" fill="#0D9488"/>
+  <text x="544" y="161" font-size="11" fill="#B0C4D8">Build AI scaling agent (LangGraph)</text>
+  <rect x="532" y="172" width="6" height="16" rx="3" fill="#0D9488"/>
+  <text x="544" y="185" font-size="11" fill="#B0C4D8">Integrate Prometheus metrics feed</text>
+  <rect x="532" y="196" width="6" height="16" rx="3" fill="#0D9488"/>
+  <text x="544" y="209" font-size="11" fill="#B0C4D8">Slack approval notification workflow</text>
+  <text x="832" y="234" text-anchor="end" font-size="9" fill="#0D9488">✓ Week 4</text>
+
+  <!-- June tasks -->
+  <rect x="848" y="140" width="196" height="104" fill="#130D2A" stroke="#1E3A4A" stroke-width="1"/>
+  <rect x="856" y="148" width="6" height="16" rx="3" fill="#7C3AED"/>
+  <text x="868" y="161" font-size="11" fill="#B0C4D8">Shadow mode on 30% farm</text>
+  <rect x="856" y="172" width="6" height="16" rx="3" fill="#7C3AED"/>
+  <text x="868" y="185" font-size="11" fill="#B0C4D8">Ansible/IPMI resize scripts</text>
+  <rect x="856" y="196" width="6" height="16" rx="3" fill="#7C3AED"/>
+  <text x="868" y="209" font-size="11" fill="#B0C4D8">Peer review &amp; iteration</text>
+  <text x="1038" y="234" text-anchor="end" font-size="9" fill="#7C3AED">✓ Week 4</text>
+
+  <!-- July tasks -->
+  <rect x="1052" y="140" width="224" height="104" fill="#1A100A" stroke="#1E3A4A" stroke-width="1"/>
+  <rect x="1060" y="148" width="6" height="16" rx="3" fill="#F97316"/>
+  <text x="1072" y="161" font-size="11" fill="#B0C4D8">Full farm rollout + auto-scale live</text>
+  <rect x="1060" y="172" width="6" height="16" rx="3" fill="#F97316"/>
+  <text x="1072" y="185" font-size="11" fill="#B0C4D8">Resource savings report</text>
+  <rect x="1060" y="196" width="6" height="16" rx="3" fill="#F97316"/>
+  <text x="1072" y="209" font-size="11" fill="#B0C4D8">Feedback loop tuning</text>
+  <!-- milestone diamond -->
+  <polygon points="1258,228 1268,238 1258,248 1248,238" fill="#F97316"/>
+  <text x="1240" y="254" text-anchor="middle" font-size="8" fill="#F97316">DONE</text>
+
+  <line x1="0" y1="248" x2="1280" y2="248" stroke="#1E3A4A" stroke-width="1.5"/>
+
+  <!-- ═══════════════════════════════════════
+       INN-02 ROW  y=248..360
+  ═══════════════════════════════════════ -->
+  <rect x="0" y="249" width="196" height="112" fill="#0A2020"/>
+  <rect x="0" y="249" width="7" height="112" fill="#0D9488"/>
+  <text x="104" y="299" text-anchor="middle" font-size="11" font-weight="700" fill="#0D9488">INN-02</text>
+  <text x="104" y="317" text-anchor="middle" font-size="10" fill="#FFFFFF">CI/CD Security</text>
+  <text x="104" y="333" text-anchor="middle" font-size="10" fill="#FFFFFF">AI-Agent</text>
+  <text x="104" y="351" text-anchor="middle" font-size="9" fill="#64A0B8">All 4 Eng</text>
+
+  <rect x="200" y="253" width="316" height="104" fill="#0A1F30" stroke="#1E3A4A" stroke-width="1"/>
+  <rect x="208" y="261" width="6" height="16" rx="3" fill="#0D9488"/>
+  <text x="220" y="274" font-size="11" fill="#B0C4D8">Integrate SonarQube with Jenkins</text>
+  <rect x="208" y="283" width="6" height="16" rx="3" fill="#0D9488"/>
+  <text x="220" y="296" font-size="11" fill="#B0C4D8">Configure Quality Gate rules</text>
+  <rect x="208" y="308" width="6" height="16" rx="3" fill="#0D9488"/>
+  <text x="220" y="321" font-size="11" fill="#B0C4D8">Map issue owners per project</text>
+  <text x="508" y="347" text-anchor="end" font-size="9" fill="#0D9488">✓ Week 4</text>
+
+  <rect x="524" y="253" width="316" height="104" fill="#0A2028" stroke="#1E3A4A" stroke-width="1"/>
+  <rect x="532" y="261" width="6" height="16" rx="3" fill="#0D9488"/>
+  <text x="544" y="274" font-size="11" fill="#B0C4D8">Build AI agent (LangGraph+Bedrock)</text>
+  <rect x="532" y="283" width="6" height="16" rx="3" fill="#0D9488"/>
+  <text x="544" y="296" font-size="11" fill="#B0C4D8">Connect to SonarQube API</text>
+  <rect x="532" y="308" width="6" height="16" rx="3" fill="#0D9488"/>
+  <text x="544" y="321" font-size="11" fill="#B0C4D8">Slack DM fix suggestions live</text>
+  <text x="832" y="347" text-anchor="end" font-size="9" fill="#0D9488">✓ Week 4</text>
+
+  <rect x="848" y="253" width="196" height="104" fill="#130D2A" stroke="#1E3A4A" stroke-width="1"/>
+  <rect x="856" y="261" width="6" height="16" rx="3" fill="#7C3AED"/>
+  <text x="868" y="274" font-size="11" fill="#B0C4D8">Auto-fix PR for BLOCKERs</text>
+  <rect x="856" y="283" width="6" height="16" rx="3" fill="#7C3AED"/>
+  <text x="868" y="296" font-size="11" fill="#B0C4D8">Block builds on CRITICAL</text>
+  <rect x="856" y="308" width="6" height="16" rx="3" fill="#7C3AED"/>
+  <text x="868" y="321" font-size="11" fill="#B0C4D8">SLA tracking per severity</text>
+  <text x="1038" y="347" text-anchor="end" font-size="9" fill="#7C3AED">✓ Week 4</text>
+
+  <rect x="1052" y="253" width="224" height="104" fill="#1A100A" stroke="#1E3A4A" stroke-width="1"/>
+  <rect x="1060" y="261" width="6" height="16" rx="3" fill="#F97316"/>
+  <text x="1072" y="274" font-size="11" fill="#B0C4D8">Full pipeline gate live</text>
+  <rect x="1060" y="283" width="6" height="16" rx="3" fill="#F97316"/>
+  <text x="1072" y="296" font-size="11" fill="#B0C4D8">SBOM generation pipeline</text>
+  <rect x="1060" y="308" width="6" height="16" rx="3" fill="#F97316"/>
+  <text x="1072" y="321" font-size="11" fill="#B0C4D8">Compliance dashboard live</text>
+  <polygon points="1258,340 1268,350 1258,360 1248,350" fill="#F97316"/>
+  <text x="1240" y="366" text-anchor="middle" font-size="8" fill="#F97316">DONE</text>
+
+  <line x1="0" y1="361" x2="1280" y2="361" stroke="#1E3A4A" stroke-width="1.5"/>
+
+  <!-- ═══════════════════════════════════════
+       INN-03 ROW  y=361..473
+  ═══════════════════════════════════════ -->
+  <rect x="0" y="362" width="196" height="112" fill="#110B2A"/>
+  <rect x="0" y="362" width="7" height="112" fill="#7C3AED"/>
+  <text x="104" y="412" text-anchor="middle" font-size="11" font-weight="700" fill="#A78BFA">INN-03</text>
+  <text x="104" y="430" text-anchor="middle" font-size="10" fill="#FFFFFF">Log Analysis &amp;</text>
+  <text x="104" y="446" text-anchor="middle" font-size="10" fill="#FFFFFF">Failure Detection</text>
+  <text x="104" y="464" text-anchor="middle" font-size="9" fill="#64A0B8">All 4 Eng</text>
+
+  <rect x="200" y="366" width="316" height="104" fill="#0A1F30" stroke="#1E3A4A" stroke-width="1"/>
+  <rect x="208" y="374" width="6" height="16" rx="3" fill="#7C3AED"/>
+  <text x="220" y="387" font-size="11" fill="#B0C4D8">Collect 90-day Jenkins+EFK logs</text>
+  <rect x="208" y="396" width="6" height="16" rx="3" fill="#7C3AED"/>
+  <text x="220" y="409" font-size="11" fill="#B0C4D8">Label known failure events</text>
+  <rect x="208" y="421" width="6" height="16" rx="3" fill="#7C3AED"/>
+  <text x="220" y="434" font-size="11" fill="#B0C4D8">Define anomaly detection approach</text>
+  <text x="508" y="460" text-anchor="end" font-size="9" fill="#7C3AED">✓ Week 4</text>
+
+  <rect x="524" y="366" width="316" height="104" fill="#0A2028" stroke="#1E3A4A" stroke-width="1"/>
+  <rect x="532" y="374" width="6" height="16" rx="3" fill="#7C3AED"/>
+  <text x="544" y="387" font-size="11" fill="#B0C4D8">Train anomaly detection model</text>
+  <rect x="532" y="396" width="6" height="16" rx="3" fill="#7C3AED"/>
+  <text x="544" y="409" font-size="11" fill="#B0C4D8">Integrate with Fluentd pipeline</text>
+  <rect x="532" y="421" width="6" height="16" rx="3" fill="#7C3AED"/>
+  <text x="544" y="434" font-size="11" fill="#B0C4D8">First Slack alerts live</text>
+  <text x="832" y="460" text-anchor="end" font-size="9" fill="#7C3AED">✓ Week 4</text>
+
+  <rect x="848" y="366" width="196" height="104" fill="#130D2A" stroke="#1E3A4A" stroke-width="1"/>
+  <rect x="856" y="374" width="6" height="16" rx="3" fill="#7C3AED"/>
+  <text x="868" y="387" font-size="11" fill="#B0C4D8">PagerDuty escalation live</text>
+  <rect x="856" y="396" width="6" height="16" rx="3" fill="#7C3AED"/>
+  <text x="868" y="409" font-size="11" fill="#B0C4D8">Grafana anomaly dashboard</text>
+  <rect x="856" y="421" width="6" height="16" rx="3" fill="#7C3AED"/>
+  <text x="868" y="434" font-size="11" fill="#B0C4D8">Auto-remediation for top 5 patterns</text>
+  <text x="1038" y="460" text-anchor="end" font-size="9" fill="#7C3AED">✓ Week 4</text>
+
+  <rect x="1052" y="366" width="224" height="104" fill="#1A100A" stroke="#1E3A4A" stroke-width="1"/>
+  <rect x="1060" y="374" width="6" height="16" rx="3" fill="#F97316"/>
+  <text x="1072" y="387" font-size="11" fill="#B0C4D8">Fine-tune false positive rules</text>
+  <rect x="1060" y="396" width="6" height="16" rx="3" fill="#F97316"/>
+  <text x="1072" y="409" font-size="11" fill="#B0C4D8">MTTD reduction benchmark</text>
+  <rect x="1060" y="421" width="6" height="16" rx="3" fill="#F97316"/>
+  <text x="1072" y="434" font-size="11" fill="#B0C4D8">Handover &amp; runbook docs</text>
+  <polygon points="1258,453 1268,463 1258,473 1248,463" fill="#F97316"/>
+  <text x="1240" y="479" text-anchor="middle" font-size="8" fill="#F97316">DONE</text>
+
+  <line x1="0" y1="474" x2="1280" y2="474" stroke="#1E3A4A" stroke-width="1.5"/>
+
+  <!-- ═══════════════════════════════════════
+       INN-04 ROW  y=474..586
+  ═══════════════════════════════════════ -->
+  <rect x="0" y="475" width="196" height="112" fill="#1A1008"/>
+  <rect x="0" y="475" width="7" height="112" fill="#F97316"/>
+  <text x="104" y="525" text-anchor="middle" font-size="11" font-weight="700" fill="#FB923C">INN-04</text>
+  <text x="104" y="543" text-anchor="middle" font-size="10" fill="#FFFFFF">Cloud Security &amp;</text>
+  <text x="104" y="559" text-anchor="middle" font-size="10" fill="#FFFFFF">Compliance Gate</text>
+  <text x="104" y="577" text-anchor="middle" font-size="9" fill="#64A0B8">All 4 Eng</text>
+
+  <rect x="200" y="479" width="316" height="104" fill="#0A1F30" stroke="#1E3A4A" stroke-width="1"/>
+  <rect x="208" y="487" width="6" height="16" rx="3" fill="#F97316"/>
+  <text x="220" y="500" font-size="11" fill="#B0C4D8">Define security policy catalogue</text>
+  <rect x="208" y="509" width="6" height="16" rx="3" fill="#F97316"/>
+  <text x="220" y="522" font-size="11" fill="#B0C4D8">Map Terraform resource risk levels</text>
+  <rect x="208" y="534" width="6" height="16" rx="3" fill="#F97316"/>
+  <text x="220" y="547" font-size="11" fill="#B0C4D8">Agree on tooling (OPA / Checkov)</text>
+  <text x="508" y="573" text-anchor="end" font-size="9" fill="#F97316">✓ Week 4</text>
+
+  <rect x="524" y="479" width="316" height="104" fill="#0A2028" stroke="#1E3A4A" stroke-width="1"/>
+  <rect x="532" y="487" width="6" height="16" rx="3" fill="#F97316"/>
+  <text x="544" y="500" font-size="11" fill="#B0C4D8">Build AI Terraform validator (LLM)</text>
+  <rect x="532" y="509" width="6" height="16" rx="3" fill="#F97316"/>
+  <text x="544" y="522" font-size="11" fill="#B0C4D8">GitHub Actions CI integration</text>
+  <rect x="532" y="534" width="6" height="16" rx="3" fill="#F97316"/>
+  <text x="544" y="547" font-size="11" fill="#B0C4D8">Initial rule set validated</text>
+  <text x="832" y="573" text-anchor="end" font-size="9" fill="#F97316">✓ Week 4</text>
+
+  <rect x="848" y="479" width="196" height="104" fill="#130D2A" stroke="#1E3A4A" stroke-width="1"/>
+  <rect x="856" y="487" width="6" height="16" rx="3" fill="#F97316"/>
+  <text x="868" y="500" font-size="11" fill="#B0C4D8">OPA / Conftest engine live</text>
+  <rect x="856" y="509" width="6" height="16" rx="3" fill="#F97316"/>
+  <text x="868" y="522" font-size="11" fill="#B0C4D8">Block/warn gates all repos</text>
+  <rect x="856" y="534" width="6" height="16" rx="3" fill="#F97316"/>
+  <text x="868" y="547" font-size="11" fill="#B0C4D8">Dev exception flow tested</text>
+  <text x="1038" y="573" text-anchor="end" font-size="9" fill="#F97316">✓ Week 4</text>
+
+  <rect x="1052" y="479" width="224" height="104" fill="#1A100A" stroke="#1E3A4A" stroke-width="1"/>
+  <rect x="1060" y="487" width="6" height="16" rx="3" fill="#F97316"/>
+  <text x="1072" y="500" font-size="11" fill="#B0C4D8">Compliance gate all TF repos</text>
+  <rect x="1060" y="509" width="6" height="16" rx="3" fill="#F97316"/>
+  <text x="1072" y="522" font-size="11" fill="#B0C4D8">Automated audit reporting</text>
+  <rect x="1060" y="534" width="6" height="16" rx="3" fill="#F97316"/>
+  <text x="1072" y="547" font-size="11" fill="#B0C4D8">Sign-off &amp; showcase</text>
+  <polygon points="1258,566 1268,576 1258,586 1248,576" fill="#F97316"/>
+  <text x="1240" y="592" text-anchor="middle" font-size="8" fill="#F97316">DONE</text>
+
+  <line x1="0" y1="587" x2="1280" y2="587" stroke="#1E3A4A" stroke-width="1.5"/>
+
+  <!-- ── Summary / KPI strip ── -->
+  <rect x="0" y="590" width="1280" height="88" fill="#071218"/>
+  <line x1="320" y1="594" x2="320" y2="674" stroke="#1E3A4A" stroke-width="1"/>
+  <line x1="640" y1="594" x2="640" y2="674" stroke="#1E3A4A" stroke-width="1"/>
+  <line x1="960" y1="594" x2="960" y2="674" stroke="#1E3A4A" stroke-width="1"/>
+
+  <!-- KPI 1 -->
+  <text x="160" y="622" text-anchor="middle" font-size="28" font-weight="700" fill="#0891B2">4</text>
+  <text x="160" y="645" text-anchor="middle" font-size="12" fill="#B0C4D8">Innovations Delivered</text>
+  <text x="160" y="662" text-anchor="middle" font-size="10" fill="#64748B">April – July 2026</text>
+
+  <!-- KPI 2 -->
+  <text x="480" y="622" text-anchor="middle" font-size="28" font-weight="700" fill="#0D9488">4</text>
+  <text x="480" y="645" text-anchor="middle" font-size="12" fill="#B0C4D8">Engineers</text>
+  <text x="480" y="662" text-anchor="middle" font-size="10" fill="#64748B">Cross-functional DevInfra team</text>
+
+  <!-- KPI 3 -->
+  <text x="800" y="622" text-anchor="middle" font-size="28" font-weight="700" fill="#7C3AED">16</text>
+  <text x="800" y="645" text-anchor="middle" font-size="12" fill="#B0C4D8">Weeks Execution</text>
+  <text x="800" y="662" text-anchor="middle" font-size="10" fill="#64748B">Milestone every month-end</text>
+
+  <!-- KPI 4 -->
+  <text x="1120" y="622" text-anchor="middle" font-size="28" font-weight="700" fill="#F97316">100%</text>
+  <text x="1120" y="645" text-anchor="middle" font-size="12" fill="#B0C4D8">AI-Agent Powered</text>
+  <text x="1120" y="662" text-anchor="middle" font-size="10" fill="#64748B">LangGraph · Bedrock · OPA</text>
+
+  <!-- footer -->
+  <rect x="0" y="700" width="1280" height="20" fill="#040C12"/>
+  <text x="640" y="714" text-anchor="middle" font-size="10" fill="#B0C4D8">Samsung R&amp;D Institute India  |  DevInfra Team  |  Each ◆ marks month-end delivery milestone</text>
+</svg>
