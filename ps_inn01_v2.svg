@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Segoe UI, Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#F0F4F8"/>
+
+  <!-- ── Header ── -->
+  <rect x="0" y="0" width="1280" height="136" fill="#0D1B2A"/>
+  <rect x="0" y="0" width="14" height="136" fill="#0891B2"/>
+
+  <!-- Badge -->
+  <rect x="26" y="14" width="90" height="26" rx="13" fill="#0891B2"/>
+  <text x="71" y="32" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">INN-01</text>
+
+  <!-- Title -->
+  <text x="26" y="74" font-size="32" font-weight="700" fill="#FFFFFF">Infra Optimization AI Agent</text>
+  <text x="26" y="108" font-size="14" fill="#B0C4D8" font-style="italic">On-prem servers are allocated to users whether they use them or not — space goes wasted while others wait.</text>
+
+  <!-- Info badge top right -->
+  <rect x="1090" y="14" width="176" height="108" rx="10" fill="#0891B2"/>
+  <text x="1178" y="46" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">INN-01</text>
+  <text x="1178" y="66" text-anchor="middle" font-size="11" fill="#CDEEF8">On-Prem Servers</text>
+  <text x="1178" y="84" text-anchor="middle" font-size="11" fill="#CDEEF8">Space Reallocation</text>
+  <text x="1178" y="104" text-anchor="middle" font-size="11" fill="#CDEEF8">Eng 1 + 2  |  By May</text>
+
+  <!-- ══════════════════════════════════════════════
+       CARD 1 — What Is the Problem?  (top-left)
+  ══════════════════════════════════════════════ -->
+  <rect x="18" y="150" width="610" height="260" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+  <!-- card header -->
+  <rect x="18" y="150" width="610" height="48" rx="10" fill="#DC2626"/>
+  <rect x="18" y="176" width="610" height="22" fill="#DC2626"/>
+  <text x="38" y="168" font-size="15" font-weight="700" fill="#FFFFFF">🔴  What Is the Problem?</text>
+  <text x="38" y="186" font-size="11" fill="#FECACA">Every user/team gets a fixed chunk of server space — used or not.</text>
+
+  <!-- body -->
+  <text x="38" y="218" font-size="13" font-weight="600" fill="#1E293B">Disk space on on-prem servers is pre-assigned to each</text>
+  <text x="38" y="238" font-size="13" font-weight="600" fill="#1E293B">user or team and never automatically adjusted.</text>
+
+  <text x="38" y="266" font-size="12" fill="#475569">A developer allocated 200 GB may only use 20 GB day to day.</text>
+  <text x="38" y="284" font-size="12" fill="#475569">That unused 180 GB sits idle — while another team is running</text>
+  <text x="38" y="302" font-size="12" fill="#475569">out of space and raising tickets to get more. Nobody is</text>
+  <text x="38" y="320" font-size="12" fill="#475569">looking at actual usage data to rebalance things smartly.</text>
+
+  <!-- impact callout -->
+  <rect x="30" y="338" width="582" height="56" rx="6" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1"/>
+  <text x="46" y="358" font-size="12" font-weight="700" fill="#DC2626">💥  The impact today:</text>
+  <text x="46" y="378" font-size="11" fill="#7F1D1D">Wasted server space + teams blocked waiting for reallocation + infra team spending</text>
+  <text x="46" y="393" font-size="11" fill="#7F1D1D">hours on manual resize tickets instead of real engineering work.</text>
+
+  <!-- ══════════════════════════════════════════════
+       CARD 2 — What Is Happening Right Now?  (top-right)
+  ══════════════════════════════════════════════ -->
+  <rect x="646" y="150" width="616" height="260" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="646" y="150" width="616" height="48" rx="10" fill="#EA580C"/>
+  <rect x="646" y="176" width="616" height="22" fill="#EA580C"/>
+  <text x="666" y="168" font-size="15" font-weight="700" fill="#FFFFFF">⚠  What Is Happening Right Now?</text>
+  <text x="666" y="186" font-size="11" fill="#FED7AA">The current manual process is slow, reactive and data-blind.</text>
+
+  <!-- challenge items -->
+  <rect x="660" y="202" width="586" height="38" rx="6" fill="#FFF7ED"/>
+  <text x="700" y="217" font-size="12" font-weight="700" fill="#EA580C">Nobody knows who is using how much space</text>
+  <text x="700" y="233" font-size="11" fill="#7C2D12">There are no dashboards or alerts showing actual per-user disk usage on the servers</text>
+  <text x="666" y="218" font-size="18" fill="#EA580C">①</text>
+
+  <rect x="660" y="246" width="586" height="38" rx="6" fill="#FFF7ED"/>
+  <text x="700" y="261" font-size="12" font-weight="700" fill="#EA580C">Reallocation takes days and needs a human every time</text>
+  <text x="700" y="277" font-size="11" fill="#7C2D12">A team raises a ticket → infra engineer reviews → resizes manually → closes ticket (2–5 days)</text>
+  <text x="666" y="262" font-size="18" fill="#EA580C">②</text>
+
+  <rect x="660" y="290" width="586" height="38" rx="6" fill="#FFF7ED"/>
+  <text x="700" y="305" font-size="12" font-weight="700" fill="#EA580C">Space is always requested at peak — never right-sized later</text>
+  <text x="700" y="321" font-size="11" fill="#7C2D12">Teams ask for maximum space during crunch time and it stays that way forever</text>
+  <text x="666" y="306" font-size="18" fill="#EA580C">③</text>
+
+  <rect x="660" y="334" width="586" height="38" rx="6" fill="#FFF7ED"/>
+  <text x="700" y="349" font-size="12" font-weight="700" fill="#EA580C">Idle users still hold onto their full allocation</text>
+  <text x="700" y="365" font-size="11" fill="#7C2D12">Users who rotated to other projects or are on leave keep their space — nothing is reclaimed</text>
+  <text x="666" y="350" font-size="18" fill="#EA580C">④</text>
+
+  <rect x="660" y="378" width="586" height="24" rx="6" fill="#FFF7ED"/>
+  <text x="700" y="393" font-size="11" font-weight="700" fill="#EA580C">Decisions are based on complaints, not data</text>
+  <text x="666" y="394" font-size="18" fill="#EA580C">⑤</text>
+
+  <!-- ══════════════════════════════════════════════
+       CARD 3 — How Does Our Solution Fix This?  (bottom-left)
+  ══════════════════════════════════════════════ -->
+  <rect x="18" y="424" width="610" height="262" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="18" y="424" width="610" height="48" rx="10" fill="#0891B2"/>
+  <rect x="18" y="450" width="610" height="22" fill="#0891B2"/>
+  <text x="38" y="442" font-size="15" font-weight="700" fill="#FFFFFF">💡  How Does Our Solution Fix This?</text>
+  <text x="38" y="460" font-size="11" fill="#CDEEF8">An AI agent watches usage, thinks, and acts — so humans don't have to.</text>
+
+  <!-- fix items -->
+  <rect x="30" y="478" width="14" height="14" rx="3" fill="#0891B2"/>
+  <text x="52" y="490" font-size="12" font-weight="600" fill="#1E293B">It watches how much space each user actually uses</text>
+  <text x="52" y="507" font-size="11" fill="#475569">The AI agent collects real usage data every day over 1–2 weeks and builds a clear picture</text>
+
+  <rect x="30" y="520" width="14" height="14" rx="3" fill="#0891B2"/>
+  <text x="52" y="532" font-size="12" font-weight="600" fill="#1E293B">It recommends right-sized space for every user</text>
+  <text x="52" y="549" font-size="11" fill="#475569">Users using only 15% of their allocation get a reduce suggestion — users near full get more</text>
+
+  <rect x="30" y="562" width="14" height="14" rx="3" fill="#0891B2"/>
+  <text x="52" y="574" font-size="12" font-weight="600" fill="#1E293B">It sends an approval request before making any change</text>
+  <text x="52" y="591" font-size="11" fill="#475569">Team leads get a Slack message — approve, reject, or ignore (auto-applies after 24 hours)</text>
+
+  <rect x="30" y="604" width="14" height="14" rx="3" fill="#0891B2"/>
+  <text x="52" y="616" font-size="12" font-weight="600" fill="#1E293B">It reclaims space from users who are no longer active</text>
+  <text x="52" y="633" font-size="11" fill="#475569">If a user has not used their space for 14 days, it is automatically freed up for others</text>
+
+  <rect x="30" y="646" width="14" height="14" rx="3" fill="#0891B2"/>
+  <text x="52" y="658" font-size="12" font-weight="600" fill="#1E293B">No manual tickets — fully automated end to end</text>
+  <text x="52" y="675" font-size="11" fill="#475569">Infra team gets a weekly summary report instead of handling individual resize requests</text>
+
+  <!-- ══════════════════════════════════════════════
+       CARD 4 — Who Gets the Most Out of This?  (bottom-right)
+  ══════════════════════════════════════════════ -->
+  <rect x="646" y="424" width="616" height="262" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="646" y="424" width="616" height="48" rx="10" fill="#16A34A"/>
+  <rect x="646" y="450" width="616" height="22" fill="#16A34A"/>
+  <text x="666" y="442" font-size="15" font-weight="700" fill="#FFFFFF">🎯  Who Gets the Most Out of This?</text>
+  <text x="666" y="460" font-size="11" fill="#DCFCE7">Everyone involved in on-prem server usage wins something.</text>
+
+  <!-- beneficiary rows -->
+  <rect x="658" y="480" width="590" height="44" rx="8" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+  <rect x="658" y="480" width="100" height="44" rx="8" fill="#0891B2"/>
+  <text x="708" y="497" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">Developers</text>
+  <text x="708" y="513" text-anchor="middle" font-size="10" fill="#CDEEF8">&amp; Teams</text>
+  <text x="772" y="497" font-size="12" font-weight="600" fill="#1E293B">Get the space they actually need, when they need it</text>
+  <text x="772" y="513" font-size="11" fill="#475569">No more raising tickets and waiting days for more space</text>
+
+  <rect x="658" y="530" width="590" height="44" rx="8" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+  <rect x="658" y="530" width="100" height="44" rx="8" fill="#0D9488"/>
+  <text x="708" y="548" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">Infra</text>
+  <text x="708" y="564" text-anchor="middle" font-size="10" fill="#CCFDF5">Engineers</text>
+  <text x="772" y="547" font-size="12" font-weight="600" fill="#1E293B">Stop doing repetitive resize work manually</text>
+  <text x="772" y="563" font-size="11" fill="#475569">AI handles routine reallocation — engineers focus on real problems</text>
+
+  <rect x="658" y="580" width="590" height="44" rx="8" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+  <rect x="658" y="580" width="100" height="44" rx="8" fill="#7C3AED"/>
+  <text x="708" y="598" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">Project</text>
+  <text x="708" y="614" text-anchor="middle" font-size="10" fill="#DDD6FE">Managers</text>
+  <text x="772" y="597" font-size="12" font-weight="600" fill="#1E293B">Clear visibility of server space usage across all teams</text>
+  <text x="772" y="613" font-size="11" fill="#475569">Weekly report shows who uses what — no more guessing</text>
+
+  <rect x="658" y="630" width="590" height="44" rx="8" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+  <rect x="658" y="630" width="100" height="44" rx="8" fill="#F97316"/>
+  <text x="708" y="648" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">Management</text>
+  <text x="708" y="664" text-anchor="middle" font-size="10" fill="#FED7AA">&amp; Leadership</text>
+  <text x="772" y="647" font-size="12" font-weight="600" fill="#1E293B">Better use of existing hardware — no new servers needed</text>
+  <text x="772" y="663" font-size="11" fill="#475569">30–40% of over-allocated space recovered and reused within the team</text>
+
+  <!-- Footer -->
+  <rect x="0" y="700" width="1280" height="20" fill="#0D1B2A"/>
+  <text x="640" y="714" text-anchor="middle" font-size="10" fill="#B0C4D8">Samsung R&amp;D Institute India  |  DevInfra Innovations 2026  |  INN-01  Infra Optimization AI Agent</text>
+
+</svg>
