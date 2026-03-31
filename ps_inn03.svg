@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1280" height="720" fill="#F0F4F8"/>
+  <rect x="0" y="0" width="1280" height="130" fill="#0D1B2A"/>
+  <rect x="0" y="0" width="14" height="130" fill="#7C3AED"/>
+  <rect x="26" y="14" width="116" height="26" rx="13" fill="#7C3AED"/>
+  <text x="84" y="32" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">INN-03  |  Problem</text>
+  <text x="26" y="72" font-size="30" font-weight="700" fill="#FFFFFF">Log Analysis &amp; Early Failure Detection AI-Agent</text>
+  <text x="26" y="106" font-size="14" fill="#B0C4D8" font-style="italic">Failures are discovered after they happen — logs exist but no one is watching them intelligently in real time.</text>
+  <rect x="1100" y="14" width="166" height="104" rx="10" fill="#7C3AED"/>
+  <text x="1183" y="52" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">INN-03</text>
+  <text x="1183" y="72" text-anchor="middle" font-size="11" fill="#DDD6FE">Jenkins + EFK + K8s</text>
+  <text x="1183" y="92" text-anchor="middle" font-size="11" fill="#DDD6FE">Fluentd · Prometheus</text>
+  <text x="1183" y="112" text-anchor="middle" font-size="11" fill="#DDD6FE">All 4 Engineers</text>
+
+  <!-- Card 1: Problem Statement -->
+  <rect x="18" y="146" width="600" height="258" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="18" y="146" width="600" height="46" rx="10" fill="#DC2626"/>
+  <rect x="18" y="170" width="600" height="22" fill="#DC2626"/>
+  <text x="38" y="174" font-size="15" font-weight="700" fill="#FFFFFF">🔴  Problem Statement</text>
+  <text x="38" y="214" font-size="13" font-weight="600" fill="#1E293B">Build and deployment failures are found too late.</text>
+  <text x="38" y="236" font-size="12" fill="#475569">Jenkins jobs, Kubernetes pods, and application containers</text>
+  <text x="38" y="254" font-size="12" fill="#475569">generate enormous volumes of logs every day. These logs</text>
+  <text x="38" y="272" font-size="12" fill="#475569">contain early warning signals — error spikes, memory warnings,</text>
+  <text x="38" y="290" font-size="12" fill="#475569">timeout patterns — but engineers only look at logs reactively,</text>
+  <text x="38" y="308" font-size="12" fill="#475569">after a failure has already broken a build or taken down a</text>
+  <text x="38" y="326" font-size="12" fill="#475569">service. By then, the blast radius is already large.</text>
+  <text x="38" y="354" font-size="11" fill="#DC2626" font-weight="600">Result: Long Mean Time To Detect (MTTD). Engineers spend</text>
+  <text x="38" y="370" font-size="11" fill="#DC2626" font-weight="600">hours digging through logs manually to find root cause.</text>
+  <text x="38" y="396" font-size="10" fill="#94A3B8" font-style="italic">Affects: All build pipelines, K8s deployments, Camera &amp; Quick Share services</text>
+
+  <!-- Card 2: Current Challenges -->
+  <rect x="634" y="146" width="628" height="258" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="634" y="146" width="628" height="46" rx="10" fill="#EA580C"/>
+  <rect x="634" y="170" width="628" height="22" fill="#EA580C"/>
+  <text x="654" y="174" font-size="15" font-weight="700" fill="#FFFFFF">⚠  Current Challenges</text>
+
+  <rect x="650" y="204" width="590" height="34" rx="6" fill="#FFF7ED"/>
+  <text x="662" y="217" font-size="11" font-weight="700" fill="#EA580C">Logs are collected but never proactively analysed</text>
+  <text x="662" y="232" font-size="10" fill="#7C2D12">EFK stack centralises logs but has no anomaly detection — it's a passive archive</text>
+
+  <rect x="650" y="244" width="590" height="34" rx="6" fill="#FFF7ED"/>
+  <text x="662" y="257" font-size="11" font-weight="700" fill="#EA580C">Engineers only investigate after a failure is reported</text>
+  <text x="662" y="272" font-size="10" fill="#7C2D12">By the time someone raises an issue, 30–60 min of build time is already lost</text>
+
+  <rect x="650" y="284" width="590" height="34" rx="6" fill="#FFF7ED"/>
+  <text x="662" y="297" font-size="11" font-weight="700" fill="#EA580C">No pattern library for known recurring failures</text>
+  <text x="662" y="312" font-size="10" fill="#7C2D12">OOMKilled, flaky tests, Docker cache miss — same failures keep recurring unseen</text>
+
+  <rect x="650" y="324" width="590" height="34" rx="6" fill="#FFF7ED"/>
+  <text x="662" y="337" font-size="11" font-weight="700" fill="#EA580C">Prometheus alerts fire too late — on outage, not on trend</text>
+  <text x="662" y="352" font-size="10" fill="#7C2D12">Threshold-based alerts miss gradual degradation leading up to a failure</text>
+
+  <rect x="650" y="364" width="590" height="28" rx="6" fill="#FFF7ED"/>
+  <text x="662" y="377" font-size="11" font-weight="700" fill="#EA580C">Root cause analysis is entirely manual and time-consuming</text>
+  <text x="662" y="391" font-size="10" fill="#7C2D12">Senior engineers spend 2–4 hours per incident correlating logs across systems</text>
+
+  <!-- Card 3: Why We Need This -->
+  <rect x="18" y="416" width="600" height="256" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="18" y="416" width="600" height="46" rx="10" fill="#7C3AED"/>
+  <rect x="18" y="440" width="600" height="22" fill="#7C3AED"/>
+  <text x="38" y="444" font-size="15" font-weight="700" fill="#FFFFFF">💡  Why We Need This Solution</text>
+
+  <rect x="30" y="474" width="14" height="14" rx="3" fill="#7C3AED"/>
+  <text x="52" y="486" font-size="12" font-weight="600" fill="#1E293B">Detect failures before they become outages</text>
+  <text x="52" y="502" font-size="11" fill="#475569">AI monitors log trends continuously — alerts on anomaly, not on crash</text>
+
+  <rect x="30" y="516" width="14" height="14" rx="3" fill="#7C3AED"/>
+  <text x="52" y="528" font-size="12" font-weight="600" fill="#1E293B">Pattern library catches known recurring failures instantly</text>
+  <text x="52" y="544" font-size="11" fill="#475569">OOMKilled, flaky tests, cache misses — recognised and alerted within seconds</text>
+
+  <rect x="30" y="558" width="14" height="14" rx="3" fill="#7C3AED"/>
+  <text x="52" y="570" font-size="12" font-weight="600" fill="#1E293B">LLM explains root cause in plain English</text>
+  <text x="52" y="586" font-size="11" fill="#475569">Slack alert says "OOMKilled because memory limit 512Mi exceeded at 09:14" — not just an error code</text>
+
+  <rect x="30" y="600" width="14" height="14" rx="3" fill="#7C3AED"/>
+  <text x="52" y="612" font-size="12" font-weight="600" fill="#1E293B">Auto-remediation for well-known failure patterns</text>
+  <text x="52" y="628" font-size="11" fill="#475569">Restart stuck pods, clear build caches, requeue failed jobs — without human intervention</text>
+
+  <rect x="30" y="642" width="14" height="14" rx="3" fill="#7C3AED"/>
+  <text x="52" y="654" font-size="12" font-weight="600" fill="#1E293B">Drastically reduces MTTD and MTTR</text>
+  <text x="52" y="670" font-size="11" fill="#475569">From hours of manual log digging to minutes of AI-assisted root cause analysis</text>
+
+  <!-- Card 4: Who Benefits -->
+  <rect x="634" y="416" width="628" height="256" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="634" y="416" width="628" height="46" rx="10" fill="#16A34A"/>
+  <rect x="634" y="440" width="628" height="22" fill="#16A34A"/>
+  <text x="654" y="444" font-size="15" font-weight="700" fill="#FFFFFF">✅  Who Benefits</text>
+
+  <rect x="646" y="474" width="100" height="28" rx="14" fill="#7C3AED"/>
+  <text x="696" y="493" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">On-Call Eng</text>
+  <text x="756" y="488" font-size="12" font-weight="600" fill="#1E293B">Woken up less — AI handles first-line triage</text>
+  <text x="756" y="504" font-size="11" fill="#475569">PagerDuty fired only on confirmed P1, not on every spike</text>
+
+  <rect x="646" y="514" width="100" height="28" rx="14" fill="#0891B2"/>
+  <text x="696" y="533" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">Dev Teams</text>
+  <text x="756" y="528" font-size="12" font-weight="600" fill="#1E293B">Build failures explained, not just reported</text>
+  <text x="756" y="544" font-size="11" fill="#475569">Get a plain-English summary of why the build failed and what to fix</text>
+
+  <rect x="646" y="554" width="100" height="28" rx="14" fill="#0D9488"/>
+  <text x="696" y="573" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">Infra Team</text>
+  <text x="756" y="568" font-size="12" font-weight="600" fill="#1E293B">Proactive capacity and health insights</text>
+  <text x="756" y="584" font-size="11" fill="#475569">Trend dashboards show degradation weeks before critical failure</text>
+
+  <rect x="646" y="594" width="100" height="28" rx="14" fill="#EA580C"/>
+  <text x="696" y="613" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">Management</text>
+  <text x="756" y="608" font-size="12" font-weight="600" fill="#1E293B">Reduced incident count month-over-month</text>
+  <text x="756" y="624" font-size="11" fill="#475569">MTTD and MTTR metrics reported in monthly DevInfra dashboard</text>
+
+  <rect x="646" y="634" width="100" height="28" rx="14" fill="#16A34A"/>
+  <text x="696" y="653" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">All Projects</text>
+  <text x="756" y="648" font-size="12" font-weight="600" fill="#1E293B">Camera, Quick Share, Bixby, Tizen, DPI</text>
+  <text x="756" y="664" font-size="11" fill="#475569">Any project using Jenkins + K8s benefits from early warning</text>
+
+  <rect x="0" y="698" width="1280" height="22" fill="#0D1B2A"/>
+  <text x="640" y="714" text-anchor="middle" font-size="10" fill="#B0C4D8">Samsung R&amp;D Institute India  |  DevInfra Innovations 2026  |  INN-03 Problem Statement</text>
+</svg>
