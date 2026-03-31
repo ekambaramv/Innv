@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1280" height="720" fill="#F0F4F8"/>
+  <!-- Header -->
+  <rect x="0" y="0" width="1280" height="130" fill="#0D1B2A"/>
+  <rect x="0" y="0" width="14" height="130" fill="#0891B2"/>
+  <rect x="26" y="14" width="116" height="26" rx="13" fill="#0891B2"/>
+  <text x="84" y="32" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">INN-01  |  Problem</text>
+  <text x="26" y="72" font-size="30" font-weight="700" fill="#FFFFFF">Build Farm Infrastructure AI-Agent</text>
+  <text x="26" y="106" font-size="14" fill="#B0C4D8" font-style="italic">Physical build servers — over-allocated to users who barely use them, wasting capacity silently.</text>
+  <rect x="1100" y="14" width="166" height="104" rx="10" fill="#0891B2"/>
+  <text x="1183" y="52" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">INN-01</text>
+  <text x="1183" y="72" text-anchor="middle" font-size="11" fill="#CDEEF8">Camera BuildFarm</text>
+  <text x="1183" y="92" text-anchor="middle" font-size="11" fill="#CDEEF8">Quick Share Pipelines</text>
+  <text x="1183" y="112" text-anchor="middle" font-size="11" fill="#CDEEF8">Eng 1 + 2</text>
+
+  <!-- 4 quadrant cards -->
+  <!-- Card 1: Problem Statement -->
+  <rect x="18" y="146" width="600" height="258" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="18" y="146" width="600" height="46" rx="10" fill="#DC2626"/>
+  <rect x="18" y="170" width="600" height="22" fill="#DC2626"/>
+  <text x="38" y="174" font-size="15" font-weight="700" fill="#FFFFFF">🔴  Problem Statement</text>
+  <text x="38" y="214" font-size="13" font-weight="600" fill="#1E293B">Build Farm servers are statically allocated per user/team.</text>
+  <text x="38" y="236" font-size="12" fill="#475569">Each developer or team is given a fixed block of CPU cores and</text>
+  <text x="38" y="254" font-size="12" fill="#475569">RAM on physical build servers — regardless of whether they</text>
+  <text x="38" y="272" font-size="12" fill="#475569">actually use it. Idle allocations sit unused for days or weeks</text>
+  <text x="38" y="290" font-size="12" fill="#475569">while teams with heavy build loads are bottlenecked and</text>
+  <text x="38" y="308" font-size="12" fill="#475569">waiting in queue — because no one is watching usage patterns.</text>
+  <text x="38" y="334" font-size="11" fill="#DC2626" font-weight="600">Result: Wasted hardware capacity + build delays = slower delivery</text>
+  <text x="38" y="352" font-size="11" fill="#DC2626" font-weight="600">for active teams + invisible cost to the organisation.</text>
+  <text x="38" y="390" font-size="10" fill="#94A3B8" font-style="italic">Affects: Camera, Quick Share, Bixby OnDevice, DPI/SCM build teams</text>
+
+  <!-- Card 2: Current Challenges -->
+  <rect x="634" y="146" width="628" height="258" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="634" y="146" width="628" height="46" rx="10" fill="#EA580C"/>
+  <rect x="634" y="170" width="628" height="22" fill="#EA580C"/>
+  <text x="654" y="174" font-size="15" font-weight="700" fill="#FFFFFF">⚠  Current Challenges</text>
+
+  <!-- challenge items -->
+  <rect x="650" y="204" width="590" height="34" rx="6" fill="#FFF7ED"/>
+  <text x="662" y="217" font-size="11" font-weight="700" fill="#EA580C">No visibility into per-user resource utilisation</text>
+  <text x="662" y="232" font-size="10" fill="#7C2D12">No dashboards exist showing who uses what % of their allocation daily</text>
+
+  <rect x="650" y="244" width="590" height="34" rx="6" fill="#FFF7ED"/>
+  <text x="662" y="257" font-size="11" font-weight="700" fill="#EA580C">Manual reallocation process is slow and reactive</text>
+  <text x="662" y="272" font-size="10" fill="#7C2D12">Teams raise tickets; infra team resizes manually — takes 2–5 days</text>
+
+  <rect x="650" y="284" width="590" height="34" rx="6" fill="#FFF7ED"/>
+  <text x="662" y="297" font-size="11" font-weight="700" fill="#EA580C">Peak-based allocation leads to permanent over-provisioning</text>
+  <text x="662" y="312" font-size="10" fill="#7C2D12">Teams request max capacity for peak sprints; baseline is 10–20% of that</text>
+
+  <rect x="650" y="324" width="590" height="34" rx="6" fill="#FFF7ED"/>
+  <text x="662" y="337" font-size="11" font-weight="700" fill="#EA580C">No reclaim policy for idle / departed team members</text>
+  <text x="662" y="352" font-size="10" fill="#7C2D12">Servers stay allocated to users who left or rotated to other projects</text>
+
+  <rect x="650" y="364" width="590" height="28" rx="6" fill="#FFF7ED"/>
+  <text x="662" y="377" font-size="11" font-weight="700" fill="#EA580C">Scaling decisions rely entirely on human memory and gut feel</text>
+  <text x="662" y="391" font-size="10" fill="#7C2D12">No data-driven baseline — infra team guesses based on complaints</text>
+
+  <!-- Card 3: Why We Need This Solution -->
+  <rect x="18" y="416" width="600" height="256" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="18" y="416" width="600" height="46" rx="10" fill="#0891B2"/>
+  <rect x="18" y="440" width="600" height="22" fill="#0891B2"/>
+  <text x="38" y="444" font-size="15" font-weight="700" fill="#FFFFFF">💡  Why We Need This Solution</text>
+
+  <rect x="30" y="474" width="14" height="14" rx="3" fill="#0891B2"/>
+  <text x="52" y="486" font-size="12" font-weight="600" fill="#1E293B">AI sees patterns humans miss</text>
+  <text x="52" y="502" font-size="11" fill="#475569">Continuous 24x7 monitoring of usage trends across all users — no manual effort</text>
+
+  <rect x="30" y="516" width="14" height="14" rx="3" fill="#0891B2"/>
+  <text x="52" y="528" font-size="12" font-weight="600" fill="#1E293B">Data-driven right-sizing replaces gut feel</text>
+  <text x="52" y="544" font-size="11" fill="#475569">Recommendations based on 1–2 week actual history, not one-time peak requests</text>
+
+  <rect x="30" y="558" width="14" height="14" rx="3" fill="#0891B2"/>
+  <text x="52" y="570" font-size="12" font-weight="600" fill="#1E293B">Automatic reclaim policy for idle resources</text>
+  <text x="52" y="586" font-size="11" fill="#475569">Frees up hardware for teams that genuinely need more capacity</text>
+
+  <rect x="30" y="600" width="14" height="14" rx="3" fill="#0891B2"/>
+  <text x="52" y="612" font-size="12" font-weight="600" fill="#1E293B">Reduces build wait times for high-utilisation teams</text>
+  <text x="52" y="628" font-size="11" fill="#475569">Scale-up happens proactively before queues form, not after complaints</text>
+
+  <rect x="30" y="642" width="14" height="14" rx="3" fill="#0891B2"/>
+  <text x="52" y="654" font-size="12" font-weight="600" fill="#1E293B">Human override always available</text>
+  <text x="52" y="670" font-size="11" fill="#475569">24h approval window — team leads can veto any recommendation</text>
+
+  <!-- Card 4: Who Benefits -->
+  <rect x="634" y="416" width="628" height="256" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+  <rect x="634" y="416" width="628" height="46" rx="10" fill="#16A34A"/>
+  <rect x="634" y="440" width="628" height="22" fill="#16A34A"/>
+  <text x="654" y="444" font-size="15" font-weight="700" fill="#FFFFFF">✅  Who Benefits</text>
+
+  <!-- Beneficiary rows -->
+  <rect x="646" y="474" width="86" height="28" rx="14" fill="#0891B2"/>
+  <text x="689" y="493" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">Dev Teams</text>
+  <text x="742" y="488" font-size="12" font-weight="600" fill="#1E293B">Faster builds, no more queue bottlenecks</text>
+  <text x="742" y="504" font-size="11" fill="#475569">Active teams get more cores when they need them</text>
+
+  <rect x="646" y="514" width="86" height="28" rx="14" fill="#0D9488"/>
+  <text x="689" y="533" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">Infra Team</text>
+  <text x="742" y="528" font-size="12" font-weight="600" fill="#1E293B">Zero manual resize tickets to handle</text>
+  <text x="742" y="544" font-size="11" fill="#475569">AI handles routine scale decisions autonomously</text>
+
+  <rect x="646" y="554" width="86" height="28" rx="14" fill="#7C3AED"/>
+  <text x="689" y="573" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">Management</text>
+  <text x="742" y="568" font-size="12" font-weight="600" fill="#1E293B">Hardware cost savings — visible ROI report</text>
+  <text x="742" y="584" font-size="11" fill="#475569">~30–40% reclaim of over-allocated build capacity</text>
+
+  <rect x="646" y="594" width="86" height="28" rx="14" fill="#F97316"/>
+  <text x="689" y="613" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">Projects</text>
+  <text x="742" y="608" font-size="12" font-weight="600" fill="#1E293B">Camera, Quick Share, Bixby, DPI/SCM</text>
+  <text x="742" y="624" font-size="11" fill="#475569">All build pipelines on the farm benefit directly</text>
+
+  <rect x="646" y="634" width="86" height="28" rx="14" fill="#DC2626"/>
+  <text x="689" y="653" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">CI-Bot Pool</text>
+  <text x="742" y="648" font-size="12" font-weight="600" fill="#1E293B">Automated jobs get right-sized pools</text>
+  <text x="742" y="664" font-size="11" fill="#475569">No idle CI runners consuming idle capacity overnight</text>
+
+  <!-- Footer -->
+  <rect x="0" y="698" width="1280" height="22" fill="#0D1B2A"/>
+  <text x="640" y="714" text-anchor="middle" font-size="10" fill="#B0C4D8">Samsung R&amp;D Institute India  |  DevInfra Innovations 2026  |  INN-01 Problem Statement</text>
+</svg>
